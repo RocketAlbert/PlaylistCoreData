@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Playlist List Table View Controller-->
         <scene sceneID="1XJ-ey-hcl">
             <objects>
-                <tableViewController id="ahB-7V-eVX" sceneMemberID="viewController">
+                <tableViewController id="ahB-7V-eVX" customClass="PlaylistListTableViewController" customModule="PlayListCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fN6-2f-Pf4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +61,14 @@
                     <navigationItem key="navigationItem" id="79t-4p-NiX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="37v-vg-EBB">
                             <connections>
+                                <action selector="addPlaylistTapped:" destination="ahB-7V-eVX" id="ihi-hM-k6T"/>
                                 <segue destination="Vc7-xS-AsI" kind="show" id="0i8-VV-nF7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playlistTextField" destination="6l5-8Z-Nz5" id="pve-2y-dH2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsg-px-5mv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,7 +77,7 @@
         <!--Playlist-->
         <scene sceneID="gdA-Kx-ZoT">
             <objects>
-                <tableViewController id="Vc7-xS-AsI" sceneMemberID="viewController">
+                <tableViewController id="Vc7-xS-AsI" customClass="SongListTableViewController" customModule="PlayListCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="We5-it-ApO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,8 +144,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Playlist" id="Duy-gY-v9u">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="SOF-L1-OL5"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SOF-L1-OL5"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistNameTextField" destination="PQv-Xu-9gL" id="Bo1-E7-ovq"/>
+                        <outlet property="songNameTextField" destination="SZC-pF-F2O" id="9Y6-Rl-lBp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsL-oL-9CY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,8 @@
 		F6DD2DC822BA987600B69291 /* PlayListCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6DD2DC622BA987600B69291 /* PlayListCoreData.xcdatamodeld */; };
 		F6DD2DCA22BA987800B69291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DD2DC922BA987800B69291 /* Assets.xcassets */; };
 		F6DD2DCD22BA987800B69291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DD2DCB22BA987800B69291 /* LaunchScreen.storyboard */; };
+		F6DD2DD922BA9DB500B69291 /* PlaylistListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD2DD822BA9DB500B69291 /* PlaylistListTableViewController.swift */; };
+		F6DD2DDB22BA9EA300B69291 /* SongListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD2DDA22BA9EA300B69291 /* SongListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F6DD2DC922BA987800B69291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6DD2DCC22BA987800B69291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6DD2DCE22BA987800B69291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DD2DD822BA9DB500B69291 /* PlaylistListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistListTableViewController.swift; sourceTree = "<group>"; };
+		F6DD2DDA22BA9EA300B69291 /* SongListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,9 @@
 		F6DD2DBE22BA987600B69291 /* PlayListCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				F6DD2DBF22BA987600B69291 /* AppDelegate.swift */,
-				F6DD2DC122BA987600B69291 /* ViewController.swift */,
-				F6DD2DC322BA987600B69291 /* Main.storyboard */,
-				F6DD2DC922BA987800B69291 /* Assets.xcassets */,
-				F6DD2DCB22BA987800B69291 /* LaunchScreen.storyboard */,
-				F6DD2DCE22BA987800B69291 /* Info.plist */,
+				F6DD2DD822BA9DB500B69291 /* PlaylistListTableViewController.swift */,
+				F6DD2DDA22BA9EA300B69291 /* SongListTableViewController.swift */,
+				F6DD2DD522BA9CA400B69291 /* Resources */,
 				F6DD2DD422BA98D900B69291 /* Models */,
 			);
 			path = PlayListCoreData;
@@ -73,6 +74,19 @@
 				F6DD2DC622BA987600B69291 /* PlayListCoreData.xcdatamodeld */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F6DD2DD522BA9CA400B69291 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6DD2DBF22BA987600B69291 /* AppDelegate.swift */,
+				F6DD2DC122BA987600B69291 /* ViewController.swift */,
+				F6DD2DC322BA987600B69291 /* Main.storyboard */,
+				F6DD2DC922BA987800B69291 /* Assets.xcassets */,
+				F6DD2DCB22BA987800B69291 /* LaunchScreen.storyboard */,
+				F6DD2DCE22BA987800B69291 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DD2DDB22BA9EA300B69291 /* SongListTableViewController.swift in Sources */,
 				F6DD2DC822BA987600B69291 /* PlayListCoreData.xcdatamodeld in Sources */,
+				F6DD2DD922BA9DB500B69291 /* PlaylistListTableViewController.swift in Sources */,
 				F6DD2DC222BA987600B69291 /* ViewController.swift in Sources */,
 				F6DD2DC022BA987600B69291 /* AppDelegate.swift in Sources */,
 			);
@@ -296,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CFV9N227P7;
-				INFOPLIST_FILE = PlayListCoreData/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlayListCoreData/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CFV9N227P7;
-				INFOPLIST_FILE = PlayListCoreData/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PlayListCoreData/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
