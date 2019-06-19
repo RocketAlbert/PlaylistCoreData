@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F679497F22BAA73E002C0380 /* Song+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679497E22BAA73E002C0380 /* Song+Convenience.swift */; };
+		F679498122BAAADC002C0380 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679498022BAAADC002C0380 /* PlaylistController.swift */; };
+		F679498322BAB1FC002C0380 /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F679498222BAB1FC002C0380 /* SongController.swift */; };
 		F6DD2DC022BA987600B69291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD2DBF22BA987600B69291 /* AppDelegate.swift */; };
 		F6DD2DC222BA987600B69291 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD2DC122BA987600B69291 /* ViewController.swift */; };
 		F6DD2DC522BA987600B69291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DD2DC322BA987600B69291 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		F679497E22BAA73E002C0380 /* Song+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+Convenience.swift"; sourceTree = "<group>"; };
+		F679498022BAAADC002C0380 /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
+		F679498222BAB1FC002C0380 /* SongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
 		F6DD2DBC22BA987600B69291 /* PlayListCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayListCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DD2DBF22BA987600B69291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6DD2DC122BA987600B69291 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,10 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F679498422BAB234002C0380 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F679498022BAAADC002C0380 /* PlaylistController.swift */,
+				F679498222BAB1FC002C0380 /* SongController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
 		F6DD2DB322BA987600B69291 = {
 			isa = PBXGroup;
 			children = (
-				F679497E22BAA73E002C0380 /* Song+Convenience.swift */,
 				F6DD2DBE22BA987600B69291 /* PlayListCoreData */,
 				F6DD2DBD22BA987600B69291 /* Products */,
 			);
@@ -71,6 +83,7 @@
 				F6DD2DDA22BA9EA300B69291 /* SongListTableViewController.swift */,
 				F6DD2DD522BA9CA400B69291 /* Resources */,
 				F6DD2DD422BA98D900B69291 /* Models */,
+				F679498422BAB234002C0380 /* Model Controllers */,
 			);
 			path = PlayListCoreData;
 			sourceTree = "<group>";
@@ -79,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F6DD2DC622BA987600B69291 /* PlayListCoreData.xcdatamodeld */,
+				F679497E22BAA73E002C0380 /* Song+Convenience.swift */,
 				F6DD2DDC22BAA36300B69291 /* Playlist+Convenience.swift */,
 				F6DD2DDE22BAA46200B69291 /* coreDataStack.swift */,
 			);
@@ -169,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F679498322BAB1FC002C0380 /* SongController.swift in Sources */,
 				F679497F22BAA73E002C0380 /* Song+Convenience.swift in Sources */,
 				F6DD2DDF22BAA46200B69291 /* coreDataStack.swift in Sources */,
 				F6DD2DDB22BA9EA300B69291 /* SongListTableViewController.swift in Sources */,
@@ -177,6 +192,7 @@
 				F6DD2DC222BA987600B69291 /* ViewController.swift in Sources */,
 				F6DD2DC022BA987600B69291 /* AppDelegate.swift in Sources */,
 				F6DD2DDD22BAA36300B69291 /* Playlist+Convenience.swift in Sources */,
+				F679498122BAAADC002C0380 /* PlaylistController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
